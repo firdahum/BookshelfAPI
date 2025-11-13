@@ -18,7 +18,7 @@ Bookshelf API adalah proyek backend sederhana yang dibangun menggunakan Hapi.js 
 Server akan berjalan di: http://localhost:9000
 
 ## Endpoint API
-### Menambahkan Buku (POST ```/books```)
+### 1. Menambahkan Buku (POST ```/books```)
     Body (JSON):
     {
         "name": "Buku Dicoding",
@@ -31,18 +31,18 @@ Server akan berjalan di: http://localhost:9000
         "reading": true
     }
     
-### Menampilkan Semua Buku (GET ```/books```)
+### 2. Menampilkan Semua Buku (GET ```/books```)
 Optional query:
 - ?reading=1 → Menampilkan buku yang sedang dibaca
 - ?finished=0 → Menampilkan buku yang belum selesai
 - ?name=Dicoding → Mencari berdasarkan nama
 
-### Menampilkan Detail Buku (GET ```/books/{id}```)
+### 3. Menampilkan Detail Buku (GET ```/books/{id}```)
 
-### Mengubah Data Buku (PUT ```/books/{id}```)
+### 4. Mengubah Data Buku (PUT ```/books/{id}```)
 Body (JSON): sama seperti POST
 
-### Menghapus Buku (DELETE ```/books/{id}```)
+### 5. Menghapus Buku (DELETE ```/books/{id}```)
 
 ## Validasi
 - Jika ```name``` kosong → status 400
